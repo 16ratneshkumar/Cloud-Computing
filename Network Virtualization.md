@@ -1,5 +1,4 @@
-# Network Virtualization: Complete Expert Guide
-## Structured by Packet Techniques → Modes → Machine Types
+# Network Virtualization:
 
 ---
 
