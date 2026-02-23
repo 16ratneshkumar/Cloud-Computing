@@ -1,0 +1,114 @@
+# Deployment Architectures Index
+
+This index provides a structured list of all 110 deployment architectures.
+
+- [Bare Metal → Linux → LXC](deployments/1_Bare_Metal_Linux_LXC.md) — **LXC on Linux**
+- [Bare Metal → Linux → LXD → LXC](deployments/2_Bare_Metal_Linux_LXD_LXC.md) — **LXD Cloud Infrastructure**
+- [Bare Metal → Linux → systemd-nspawn](deployments/3_Bare_Metal_Linux_systemd-nspawn.md)
+- [Bare Metal → FreeBSD → Jails](deployments/4_Bare_Metal_FreeBSD_Jails.md) — **FreeBSD Jails Architecture**
+- [Bare Metal → OpenBSD → VMM](deployments/5_Bare_Metal_OpenBSD_VMM.md)
+- [Bare Metal → NetBSD → Xenbhyve](deployments/6_Bare_Metal_NetBSD_Xenbhyve.md)
+- [Bare Metal → KVM → QEMU → VMs](deployments/7_Bare_Metal_KVM_QEMU_VMs.md) — **Classic KVM/QEMU Stack**
+- [Bare Metal → Linux → libvirt → KVM → VMs](deployments/8_Bare_Metal_Linux_libvirt_KVM_VMs.md)
+- [Bare Metal → Xen → Guest → VMs](deployments/9_Bare_Metal_Xen_Guest_VMs.md)
+- [Bare Metal → VMware → ESXi → VMs](deployments/10_Bare_Metal_VMware_ESXi_VMs.md) — **VMware vSphere / ESXi**
+- [Bare Metal → Hyper-V → VMs](deployments/11_Bare_Metal_Hyper-V_VMs.md) — **Microsoft Hyper-V**
+- [Bare Metal → Proxmox → VE → KVM → VMs → LXC → Containers](deployments/12_Bare_Metal_Proxmox_VE_KVM_VMs_LXC_Containers.md) — **Proxmox Virtualization (KVM+LXC)**
+- [Bare Metal → Oracle → VM → Xen → VMs](deployments/13_Bare_Metal_Oracle_VM_Xen_VMs.md)
+- [Bare Metal → oVirt → KVM → VMs](deployments/14_Bare_Metal_oVirt_KVM_VMs.md) — **oVirt (Enterprise KVM)**
+- [Bare Metal → XCP-ng → Xen → VMs](deployments/15_Bare_Metal_XCP-ng_Xen_VMs.md) — **XCP-ng (Enterprise Xen)**
+- [Bare Metal → bhyve → FreeBSD → VMs](deployments/16_Bare_Metal_bhyve_FreeBSD_VMs.md)
+- [Bare Metal → OpenBSD → VMM → VMs → Standalone](deployments/17_Bare_Metal_OpenBSD_VMM_VMs_Standalone.md)
+- [Bare Metal → QEMU → Software → Emulation → No → KVM](deployments/18_Bare_Metal_QEMU_Software_Emulation_No_KVM.md)
+- [IBM → Z → Hardware → zVM → LinuxzOS → Guests](deployments/19_IBM_Z_Hardware_zVM_LinuxzOS_Guests.md)
+- [IBM → Power → Systems → PowerVM → VMs](deployments/20_IBM_Power_Systems_PowerVM_VMs.md)
+- [Embedded → Hardware → QNX → Hypervisor → RTOS → Linux](deployments/21_Embedded_Hardware_QNX_Hypervisor_RTOS_Linux.md)
+- [Embedded → Hardware → INTEGRITY → Multivisor](deployments/22_Embedded_Hardware_INTEGRITY_Multivisor.md)
+- [Embedded → Hardware → PikeOS → RailAvionics → VMs](deployments/23_Embedded_Hardware_PikeOS_RailAvionics_VMs.md)
+- [Bare Metal → ACRN → Hypervisor → Service → VM → RT → VMs](deployments/24_Bare_Metal_ACRN_Hypervisor_Service_VM_RT_VMs.md)
+- [Bare Metal → Nutanix → AHV → VMs → Integrated → Storage](deployments/25_Bare_Metal_Nutanix_AHV_VMs_Integrated_Storage.md) — **Nutanix AHV Infrastructure**
+- [Bare Metal → HPE → VM → Essentials → VMs](deployments/26_Bare_Metal_HPE_VM_Essentials_VMs.md)
+- [Bare Metal → Huawei → FusionCompute → VMs](deployments/27_Bare_Metal_Huawei_FusionCompute_VMs.md)
+- [Bare Metal → Scale → Computing → HC3 → VMs](deployments/28_Bare_Metal_Scale_Computing_HC3_VMs.md)
+- [Bare Metal → Kubernetes → Containers](deployments/29_Bare_Metal_Kubernetes_Containers.md) — **Bare Metal Kubernetes**
+- [Bare Metal → k3s → Containers → Lightweight → Kubernetes](deployments/30_Bare_Metal_k3s_Containers_Lightweight_Kubernetes.md) — **k3s (Edge Kubernetes)**
+- [Bare Metal → Docker → Swarm → Containers](deployments/31_Bare_Metal_Docker_Swarm_Containers.md) — **Docker Swarm**
+- [Bare Metal → Nomad → Containers → QEMU → VMs](deployments/32_Bare_Metal_Nomad_Containers_QEMU_VMs.md) — **HashiCorp Nomad**
+- [Bare Metal → Linux → Apptainer → HPC → Containers](deployments/33_Bare_Metal_Linux_Apptainer_HPC_Containers.md)
+- [Bare Metal → KVM → VMs → Kubernetes](deployments/34_Bare_Metal_KVM_VMs_Kubernetes.md)
+- [Bare Metal → KVM → VMs → DockerLXC → Multi-Tenant](deployments/35_Bare_Metal_KVM_VMs_DockerLXC_Multi-Tenant.md)
+- [Bare Metal → LXD → Cluster → Kubernetes → Nodes → as → containers](deployments/36_Bare_Metal_LXD_Cluster_Kubernetes_Nodes_as_containers.md)
+- [Bare Metal → LXD → Containers → VMs → Unified](deployments/37_Bare_Metal_LXD_Containers_VMs_Unified.md)
+- [Bare Metal → Kubernetes → KubeVirt → VMs](deployments/38_Bare_Metal_Kubernetes_KubeVirt_VMs.md) — **KubeVirt (VMs on Kubernetes)**
+- [Bare Metal → Kubernetes → Kata → Containers → MicroVMs](deployments/39_Bare_Metal_Kubernetes_Kata_Containers_MicroVMs.md) — **Kata Containers (Sandboxed Containers)**
+- [Bare Metal → Kubernetes → Firecracker → MicroVMs](deployments/40_Bare_Metal_Kubernetes_Firecracker_MicroVMs.md) — **Firecracker on K8s (Serverless)**
+- [Bare Metal → Kubernetes → Harvester → Containers → VMs](deployments/41_Bare_Metal_Kubernetes_Harvester_Containers_VMs.md)
+- [Bare Metal → OpenShift → Containers → KubeVirt → VMs](deployments/42_Bare_Metal_OpenShift_Containers_KubeVirt_VMs.md) — **Red Hat OpenShift (OCP)**
+- [Bare Metal → Talos → Linux → Kubernetes → KubeVirt → VMs](deployments/43_Bare_Metal_Talos_Linux_Kubernetes_KubeVirt_VMs.md)
+- [Bare Metal → Edge → k3s → KubeVirt → VMs](deployments/44_Bare_Metal_Edge_k3s_KubeVirt_VMs.md)
+- [Bare Metal → MicroShift → Edge → Containers](deployments/45_Bare_Metal_MicroShift_Edge_Containers.md)
+- [Bare Metal → OpenStack → KVM → VMs](deployments/46_Bare_Metal_OpenStack_KVM_VMs.md) — **Classic OpenStack (KVM Cloud)**
+- [Bare Metal → OpenStack → Ironic → Bare Metal → Nodes](deployments/47_Bare_Metal_OpenStack_Ironic_Bare_Metal_Nodes.md) — **OpenStack Ironic (Bare Metal as a Service)**
+- [Bare Metal → OpenStack → Magnum → Kubernetes → Clusters](deployments/48_Bare_Metal_OpenStack_Magnum_Kubernetes_Clusters.md) — **Kubernetes on OpenStack (Magnum)**
+- [Bare Metal → OpenStack → VMs → Kubernetes](deployments/49_Bare_Metal_OpenStack_VMs_Kubernetes.md) — **Kubernetes on OpenStack VMs**
+- [Bare Metal → Kubernetes → OpenStack → Control → Plane → Containerized](deployments/50_Bare_Metal_Kubernetes_OpenStack_Control_Plane_Containerized.md) — **OpenStack on Kubernetes (Self-Hosted Control Plane)**
+- [Bare Metal → MAAS → OpenStack → Kubernetes → KVM → Hosts](deployments/51_Bare_Metal_MAAS_OpenStack_Kubernetes_KVM_Hosts.md) — **Canonical OpenStack (MAAS/LXD)**
+- [Bare Metal → Kubernetes → Metal3 → Bare Metal → Nodes](deployments/52_Bare_Metal_Kubernetes_Metal3_Bare_Metal_Nodes.md) — **Metal3 (Bare Metal K8s Provisioning)**
+- [Bare Metal → Ironic → Standalone → Kubernetes → Nodes](deployments/53_Bare_Metal_Ironic_Standalone_Kubernetes_Nodes.md)
+- [Bare Metal → Warewulf → HPC → Cluster → Nodes](deployments/54_Bare_Metal_Warewulf_HPC_Cluster_Nodes.md)
+- [Bare Metal → Apache → CloudStack → KVMXenVMware → VMs](deployments/55_Bare_Metal_Apache_CloudStack_KVMXenVMware_VMs.md) — **Apache CloudStack**
+- [Bare Metal → OpenNebula → KVM → LXD → VMware → VMs → Containers](deployments/56_Bare_Metal_OpenNebula_KVM_LXD_VMware_VMs_Containers.md) — **OpenNebula Cloud**
+- [Bare Metal → Eucalyptus → KVMXen → VMs](deployments/57_Bare_Metal_Eucalyptus_KVMXen_VMs.md)
+- [Bare Metal → Ceph → OpenStack → VMs](deployments/58_Bare_Metal_Ceph_OpenStack_VMs.md) — **OpenStack with Ceph Storage**
+- [Bare Metal → Ceph → Kubernetes → Rook → KubeVirt → VMs](deployments/59_Bare_Metal_Ceph_Kubernetes_Rook_KubeVirt_VMs.md) — **Rook Ceph on Kubernetes**
+- [Bare Metal → GlusterFS → KVM → Shared-Storage → VMs](deployments/60_Bare_Metal_GlusterFS_KVM_Shared-Storage_VMs.md)
+- [Bare Metal → LINSTOR → DRBD → KVM → VMs](deployments/61_Bare_Metal_LINSTOR_DRBD_KVM_VMs.md)
+- [Bare Metal → Firecracker → MicroVMs → Standalone](deployments/62_Bare_Metal_Firecracker_MicroVMs_Standalone.md) — **Bare Metal Firecracker (Lambda-style)**
+- [Bare Metal → Cloud → Hypervisor → MicroVMs](deployments/63_Bare_Metal_Cloud_Hypervisor_MicroVMs.md)
+- [Bare Metal → Kubernetes → OpenFaaS → Firecracker → Functions](deployments/64_Bare_Metal_Kubernetes_OpenFaaS_Firecracker_Functions.md) — **OpenFaaS on K8s (Serverless Functions)**
+- [Bare Metal → Kubernetes → Knative → KubeVirt → VMs](deployments/65_Bare_Metal_Kubernetes_Knative_KubeVirt_VMs.md)
+- [Bare Metal → Xen → MirageOS → Unikernels](deployments/66_Bare_Metal_Xen_MirageOS_Unikernels.md) — **MirageOS (Unikernels)**
+- [Bare Metal → KVM → IncludeOS → Unikernels](deployments/67_Bare_Metal_KVM_IncludeOS_Unikernels.md)
+- [Bare Metal → KVM → OSv → Unikernels](deployments/68_Bare_Metal_KVM_OSv_Unikernels.md)
+- [Bare Metal → KVM → Xen → Unikraft → Unikernels](deployments/69_Bare_Metal_KVM_Xen_Unikraft_Unikernels.md)
+- [Bare Metal → OpenStack → Kubernetes → VNFs → OPNFV](deployments/70_Bare_Metal_OpenStack_Kubernetes_VNFs_OPNFV.md) — **OPNFV (Telco Cloud Stack)**
+- [Bare Metal → StarlingX → Containers → VMs → Telco → Edge](deployments/71_Bare_Metal_StarlingX_Containers_VMs_Telco_Edge.md) — **StarlingX (Edge Cloud Platform)**
+- [Bare Metal → Kubernetes → OSM → MANO → CNFs](deployments/72_Bare_Metal_Kubernetes_OSM_MANO_CNFs.md)
+- [Bare Metal → OpenStack → Kubernetes → ONAP → VNFsCNFs](deployments/73_Bare_Metal_OpenStack_Kubernetes_ONAP_VNFsCNFs.md) — **ONAP (Network Automation)**
+- [Bare Metal → Wind → River → Titanium → Telco → VMsCNFs](deployments/74_Bare_Metal_Wind_River_Titanium_Telco_VMsCNFs.md)
+- [Bare Metal → Kubernetes → KubeEdge → Edge → Nodes](deployments/75_Bare_Metal_Kubernetes_KubeEdge_Edge_Nodes.md) — **KubeEdge**
+- [Bare Metal → KVM → VM → Host → KVM → Nested → VMs → Guest](deployments/76_Bare_Metal_KVM_VM_Host_KVM_Nested_VMs_Guest.md) — **Nested KVM (KVM-on-KVM)**
+- [Bare Metal → OpenStack → VMs → OpenStack → Nested](deployments/77_Bare_Metal_OpenStack_VMs_OpenStack_Nested.md) — **Nested OpenStack**
+- [Bare Metal → K8s → KubeVirt → VMs → Nested → K8s](deployments/78_Bare_Metal_K8s_KubeVirt_VMs_Nested_K8s.md) — **Nested K8s on KubeVirt**
+- [Bare Metal → K8s → KubeVirt → VMs → Multi-Layer → Combo](deployments/79_Bare_Metal_K8s_KubeVirt_VMs_Multi-Layer_Combo.md)
+- [Bare Metal → LXD → VMs → QEMU → Kubernetes → Cluster → API](deployments/80_Bare_Metal_LXD_VMs_QEMU_Kubernetes_Cluster_API.md) — **Cluster API on LXD**
+- [Bare Metal → Kubernetes → Neutron-Only → K8s](deployments/81_Bare_Metal_Kubernetes_Neutron-Only_K8s.md)
+- [Bare Metal → seL4 → Formally → Verified → Partitions](deployments/82_Bare_Metal_seL4_Formally_Verified_Partitions.md) — **seL4 (Secure Microkernel Partitioning)**
+- [Bare Metal → Jailhouse → Linux → RTOS → Partitions](deployments/83_Bare_Metal_Jailhouse_Linux_RTOS_Partitions.md)
+- [Bare Metal → Barrelfish → Multi-Kernel → Research → OS](deployments/84_Bare_Metal_Barrelfish_Multi-Kernel_Research_OS.md)
+- [Bare Metal → NOVA → Microhypervisor → VMs → Research](deployments/85_Bare_Metal_NOVA_Microhypervisor_VMs_Research.md)
+- [Bare Metal → Xen → Research → Forks → Experimental → VMs](deployments/86_Bare_Metal_Xen_Research_Forks_Experimental_VMs.md)
+- [Bare Metal → Talos → Linux → K8s → Pure → Immutable → OS](deployments/87_Bare_Metal_Talos_Linux_K8s_Pure_Immutable_OS.md) — **Talos Linux (Kubernetes OS)**
+- [Bare Metal → Flatcar → Container → Linux → K8s](deployments/88_Bare_Metal_Flatcar_Container_Linux_K8s.md) — **Flatcar Container Linux**
+- [Bare Metal → NixOS → Declarative → K8s → Nodes](deployments/89_Bare_Metal_NixOS_Declarative_K8s_Nodes.md)
+- [Bare Metal → Nutanix → AHV → Prism → HCI → Extended](deployments/90_Bare_Metal_Nutanix_AHV_Prism_HCI_Extended.md)
+- [Bare Metal → VMware → vSphere → Tanzu → Kubernetes → VMs](deployments/91_Bare_Metal_VMware_vSphere_Tanzu_Kubernetes_VMs.md) — **VMware Tanzu (K8s on vSphere)**
+- [Bare Metal → Azure → Stack → HCI → WindowsLinux → VMs → AKS](deployments/92_Bare_Metal_Azure_Stack_HCI_WindowsLinux_VMs_AKS.md) — **Azure Stack HCI**
+- [Bare Metal → Proxmox → Ceph → HCI → Full → Stack](deployments/93_Bare_Metal_Proxmox_Ceph_HCI_Full_Stack.md) — **Proxmox HCI Cluster**
+- [Bare Metal → Red → Hat → Virtualization → EOL → Migration → Path](deployments/94_Bare_Metal_Red_Hat_Virtualization_EOL_Migration_Path.md)
+- [Bare Metal → Ceph → OpenStack → K8s → Metal3 → Hyperscaler](deployments/95_Bare_Metal_Ceph_OpenStack_K8s_Metal3_Hyperscaler.md) — **Cloud Hyperscaler Stack (Ceph/OpenStack/K8s/Metal3)**
+- [Bare Metal → K8s → OpenStack → Control → Plane → OCP-on-K8s](deployments/96_Bare_Metal_K8s_OpenStack_Control_Plane_OCP-on-K8s.md) — **OpenStack on K8s (OCP-on-K8s)**
+- [Bare Metal → OpenNebula → K8s → KubeVirt → Ceph → Full](deployments/97_Bare_Metal_OpenNebula_K8s_KubeVirt_Ceph_Full.md)
+- [Bare Metal → XCP-ng → Ceph → CloudStack](deployments/98_Bare_Metal_XCP-ng_Ceph_CloudStack.md)
+- [Bare Metal → Nomad → Firecracker → MicroVM → Workloads](deployments/99_Bare_Metal_Nomad_Firecracker_MicroVM_Workloads.md)
+- [Bare Metal → StarlingX → Ceph → Edge → Distributed → Cloud](deployments/100_Bare_Metal_StarlingX_Ceph_Edge_Distributed_Cloud.md)
+- [IBM → Z → Mainframe → zVM → Linux → K8s → Containers](deployments/101_IBM_Z_Mainframe_zVM_Linux_K8s_Containers.md)
+- [Bare Metal → ACRN → StarlingX → Industrial → Edge → Experimental](deployments/102_Bare_Metal_ACRN_StarlingX_Industrial_Edge_Experimental.md)
+- [Bare Metal → K8s → OpenFaaS → Firecracker → Serverless](deployments/103_Bare_Metal_K8s_OpenFaaS_Firecracker_Serverless.md) — **Firecracker/OpenFaaS Serverless Stack**
+- [Bare Metal → Xen → KubeVirt → Ceph → Unified](deployments/104_Bare_Metal_Xen_KubeVirt_Ceph_Unified.md)
+- [Bare Metal → Kubernetes → Multi-CNI → SR-IOV → NFV → Pods](deployments/105_Bare_Metal_Kubernetes_Multi-CNI_SR-IOV_NFV_Pods.md)
+- [Bare Metal → LXD → Kubernetes → Developer → Cloud](deployments/106_Bare_Metal_LXD_Kubernetes_Developer_Cloud.md)
+- [Bare Metal → Full → GitOps → Stack → Talos → Flux → Crossplane](deployments/107_Bare_Metal_Full_GitOps_Stack_Talos_Flux_Crossplane.md) — **Cloud Native Stack (Talos/Flux/Crossplane)**
+- [Bare Metal → Kubernetes → KubeVirt → VMware → Migration](deployments/108_Bare_Metal_Kubernetes_KubeVirt_VMware_Migration.md) — **KubeVirt Migration Stack (VMware to K8s)**
+- [Full → Stack → Bare Metal → MAAS → Juju → Charmed → OpenStack → K8s](deployments/109_Full_Stack_Bare_Metal_MAAS_Juju_Charmed_OpenStack_K8s.md) — **Charmed OpenStack (Canonical Stack)**
+- [Bare Metal → Kubernetes → OpenFaaS → Firecracker → Serverless → Full → Pipeline](deployments/110_Bare_Metal_Kubernetes_OpenFaaS_Firecracker_Serverless_Full_Pipeline.md) — **Full Serverless Pipeline (K8s+Firecracker)**
