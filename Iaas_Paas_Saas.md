@@ -144,7 +144,7 @@ PaaS – III  →   Upload SOURCE CODE + K8s MANIFEST (provider deploys to Kuber
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        CLOUD SERVICE MODELS                             │
 ├───────────────┬──────────────────────────────────────┬──────────────────┤
-│     IaaS      │           PaaS (I / II / III)         │       SaaS       │
+│     IaaS      │           PaaS (I / II / III)        │       SaaS       │
 ├───────────────┼──────────────────────────────────────┼──────────────────┤
 │ Nova          │ I  → Elastic Beanstalk, App Engine   │ Odoo             │
 │ Neutron       │     Heroku, Cloud Foundry, Solum     │ GitLab           │
@@ -156,19 +156,3 @@ PaaS – III  →   Upload SOURCE CODE + K8s MANIFEST (provider deploys to Kuber
 │               │     Heat, Sahara, Mistral, Senlin    │                  │
 └───────────────┴──────────────────────────────────────┴──────────────────┘
 ```
-
----
-
-## 5. Corrections from Original Notes
-
-| Handwritten      | Corrected          | Reason                                    |
-|------------------|--------------------|-------------------------------------------|
-| Hero Ky          | **Heroku**         | PaaS platform by Salesforce               |
-| Barb Brian       | **Barbican**       | OpenStack key management service          |
-| Octovia          | **Octavia**        | OpenStack load balancing service          |
-| Kurys            | **Kuryr**          | OpenStack container networking            |
-| Mestral          | **Mistral**        | OpenStack workflow service                |
-| Gitlabs          | **GitLab**         | No trailing 's'                           |
-| Elastes lambda   | **AWS Lambda**     | AWS serverless / FaaS                     |
-| w S02 App Cloud  | **WS02 App Cloud** | Enterprise integration PaaS               |
-| Barbican in SaaS | Kept (noted)       | Barbican is OpenStack; can be SaaS-delivered |
